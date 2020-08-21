@@ -1,11 +1,11 @@
-@import url('normalize.css');
+@import url("normalize.css");
 
 @font-face {
-  font-family: 'icon';
-  src: url('font/icon.eot');
-  src: url('font/icon.woff') format('woff'),
-    url('font/icon.ttf') format('truetype'),
-    url('font/icon.svg#icon') format('svg');
+  font-family: "icon";
+  src: url("font/icon.eot");
+  src: url("font/icon.woff") format("woff"),
+    url("font/icon.ttf") format("truetype"),
+    url("font/icon.svg#icon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -110,8 +110,8 @@
 }
 
 .demo-content a:last-child:before {
-  content: '\53';
-  font-family: 'icon';
+  content: "\53";
+  font-family: "icon";
   font-style: normal;
   font-weight: normal;
   padding-right: 5px;
@@ -174,7 +174,7 @@
 }
 
 .demo-slideContainer > nav > a:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100px;
   height: 100px;
@@ -215,4 +215,24 @@
   -o-transition: top 400ms ease-out;
   -ms-transition: top 400ms ease-out;
   transition: top 400ms ease-out;
+}
+
+.demo-product-1 {
+  background-image: url(../images/1.jpg);
+}
+
+.demo-product-2 {
+  background-image: url(../images/2.jpg);
+}
+
+.demo-product-3 {
+  background-image: url(../images/3.jpg);
+}
+
+.demo-product-4 {
+  background-image: url(../images/4.jpg);
+}
+
+.demo-product-5 {
+  background-image: url(../images/5.jpg);
 }

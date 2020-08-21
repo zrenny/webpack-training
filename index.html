@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Slider</title>
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
     <link
       href="http://fonts.googleapis.com/css?family=Dosis:200,400,700"
       rel="stylesheet"
@@ -22,7 +21,7 @@
       <div class="demo-contentwrapper">
         <div class="demo-content">
           <h2>Product 1</h2>
-          <span class="demo-price">$100</span>
+          <span class="demo-price">$99</span>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
             incidunt nostrum eum officiis eaque, deleniti aperiam autem. Fuga
@@ -34,7 +33,7 @@
 
         <div class="demo-content">
           <h2>Product 2</h2>
-          <span class="demo-price">$65</span>
+          <span class="demo-price">$69</span>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
             optio ipsum reiciendis repellat animi repudiandae omnis esse soluta
@@ -46,7 +45,7 @@
 
         <div class="demo-content">
           <h2>Product 3</h2>
-          <span class="demo-price">$140</span>
+          <span class="demo-price">$39</span>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
             mollitia voluptate temporibus officiis aliquid voluptatem quis harum
@@ -58,7 +57,7 @@
 
         <div class="demo-content">
           <h2>Product 4</h2>
-          <span class="demo-price">$195</span>
+          <span class="demo-price">$159</span>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
             corrupti vero accusantium sapiente odio est cumque doloremque nemo
@@ -70,7 +69,7 @@
 
         <div class="demo-content">
           <h2>Product 5</h2>
-          <span class="demo-price">$30</span>
+          <span class="demo-price">$29</span>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
             repellendus, a cumque accusantium veritatis esse aliquid aspernatur
@@ -84,11 +83,11 @@
 
       <div class="demo-slideContainer">
         <div class="demo-slides">
-          <div style="background-image:url(images/1.jpg);"></div>
-          <div style="background-image:url(images/2.jpg);"></div>
-          <div style="background-image:url(images/3.jpg);"></div>
-          <div style="background-image:url(images/4.jpg);"></div>
-          <div style="background-image:url(images/5.jpg);"></div>
+          <div class="demo-product-1"></div>
+          <div class="demo-product-2"></div>
+          <div class="demo-product-3"></div>
+          <div class="demo-product-4"></div>
+          <div class="demo-product-5"></div>
         </div>
 
         <nav>
@@ -104,7 +103,5 @@
       type="text/javascript"
       src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"
     ></script>
-    <script type="text/javascript" src="js/slider.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
