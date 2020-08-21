@@ -2,7 +2,7 @@ const { ProvidePlugin } = require("webpack");
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const ExamplePlugin = require("./plugins/examplePlugin");
+const CompileDuration = require("./plugins/compileDuration");
 
 module.exports = {
   context: path.join(__dirname, "../src/"),
@@ -55,7 +55,7 @@ module.exports = {
     new ProvidePlugin({
       // _clone: ["lodash", "clone"]
     }),
-    new ExamplePlugin()
+    new CompileDuration()
   ],
   output: {
     path: path.resolve(__dirname, "../dist"),

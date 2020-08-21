@@ -21,7 +21,7 @@ module.exports = {
     port: 8080,
     // contentBase: path.join(__dirname, "../dist"),
     hot: true,
-    // noInfo: true,
+    noInfo: true,
     headers: { "Access-Control-Allow-Origin": "*" },
     watchOptions: { ignored: /node_modules/ }
   },
