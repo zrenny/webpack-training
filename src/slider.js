@@ -68,7 +68,7 @@ export var Slider = (function() {
       $slides.on("transitionend", removeTransition);
     },
     removeTransition = function() {
-      // console.log("HMR!!");
+      console.log("HMR!!");
       isAnimating = false;
       $(this).removeClass("demo-move");
     },
