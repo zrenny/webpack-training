@@ -28,12 +28,10 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: process.env.NODE_ENV === "development"
-            }
-          }, // instead of style-loader
+          "style-loader",
+          // {
+          //   loader: MiniCssExtractPlugin.loader
+          // }, // instead of style-loader
           "css-loader"
         ]
       }
@@ -45,7 +43,8 @@ module.exports = {
   resolve: {
     extensions: [".js"],
     alias: {
-      slider: path.resolve(__dirname, "../src/slider.js")
+      // slider: path.resolve(__dirname, "../src/slider.js")
+      slider: "./slider.js"
     },
     modules: [path.resolve(__dirname, "../node_modules")]
   },
@@ -67,7 +66,30 @@ module.exports = {
     splitChunks: {
       chunks: "all"
     },
+    // splitChunks: {
+    //   chunks: 'async',
+    //   minSize: 20000,
+    //   minRemainingSize: 0,
+    //   maxSize: 0,
+    //   minChunks: 1,
+    //   maxAsyncRequests: 30,
+    //   maxInitialRequests: 30,
+    //   automaticNameDelimiter: '~',
+    //   enforceSizeThreshold: 50000,
+    //   cacheGroups: {
+    //     defaultVendors: {
+    //       test: /[\\/]node_modules[\\/]/,
+    //       priority: -10
+    //     },
+    //     default: {
+    //       minChunks: 2,
+    //       priority: -20,
+    //       reuseExistingChunk: true
+    //     }
+    //   }
+    // }
 
+    // Seperate the runtime chunk code from bundle -- per entry point
     runtimeChunk: true
   }
 };
